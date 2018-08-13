@@ -31,10 +31,9 @@ class ViewController: UIViewController {
                 return UITraitCollection(traitsFrom: [hR])
             } else if Device.IS_5_8_INCHES() {
                 return UITraitCollection(traitsFrom: [hC])
-            }
-            else if Device.IS_IPAD_AIR_OR_SMALL_PRO() {
+            } else if Device.IS_9_7_INCHES() {
                 return UITraitCollection(traitsFrom: [wC, hC])
-            } else if Device.IS_IPAD_BIG_PRO() {
+            } else if Device.IS_12_9_INCHES() {
                 return UITraitCollection(traitsFrom: [wR, hR])
             }
         

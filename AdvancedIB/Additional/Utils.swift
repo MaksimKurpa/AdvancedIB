@@ -226,8 +226,8 @@ struct Device {
         case Inches_5_5 = 736
         case Inches_5_8 = 812
         
-        case Inches_Ipad = 1024
-        case Inches_Ipad_Big_Pro = 1366
+        case Inches_9_7 = 1024
+        case Inches_12_9 = 1366
     }
     
     static func isSize(height: Heights) -> Bool {
@@ -328,13 +328,13 @@ struct Device {
 //            //&& UIScreen.pointsPerInch == 326
 //    }
     
-    static func IS_IPAD_AIR_OR_SMALL_PRO() -> Bool {
-        return isPad() && isSize(height: .Inches_Ipad)
+    static func IS_9_7_INCHES() -> Bool {
+        return isPad() && isSize(height: .Inches_9_7)
             //&& UIScreen.pointsPerInch == 264
     }
     
-    static func IS_IPAD_BIG_PRO() -> Bool {
-        return isPad() && isSize(height: .Inches_Ipad_Big_Pro)
+    static func IS_12_9_INCHES() -> Bool {
+        return isPad() && isSize(height: .Inches_12_9)
             //&& UIScreen.pointsPerInch == 264
     }
     
