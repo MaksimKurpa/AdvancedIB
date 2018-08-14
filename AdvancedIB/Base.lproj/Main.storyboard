@@ -46,24 +46,10 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OGe-br-MyG" customClass="FirstView" customModule="AdvancedIB" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="375" height="128"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qau-VG-HMp">
-                                        <rect key="frame" x="275" y="24" width="76" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Qau-VG-HMp" secondAttribute="height" multiplier="19:20" id="lfK-KH-9wu"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="5Wp-5B-VXg"/>
-                                    <constraint firstAttribute="bottom" secondItem="Qau-VG-HMp" secondAttribute="bottom" constant="24" id="7LQ-o6-anf"/>
-                                    <constraint firstAttribute="trailing" secondItem="Qau-VG-HMp" secondAttribute="trailing" constant="24" id="EbF-YW-3ux"/>
-                                    <constraint firstItem="Qau-VG-HMp" firstAttribute="top" secondItem="OGe-br-MyG" secondAttribute="top" constant="24" id="NrO-E1-18C"/>
                                 </constraints>
-                                <connections>
-                                    <outlet property="_avatarImageView" destination="Qau-VG-HMp" id="7Bx-97-vfJ"/>
-                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -29,7 +29,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d0X-gl-gaF">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bob" translatesAutoresizingMaskIntoConstraints="NO" id="d0X-gl-gaF">
                     <rect key="frame" x="16" y="9.5" width="77" height="77"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="d0X-gl-gaF" secondAttribute="height" id="Hp8-rP-82S"/>
@@ -42,7 +42,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.82352941180000006" green="0.1019607843" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="d0X-gl-gaF" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="80:100" id="0hW-GN-s4j"/>
                 <constraint firstItem="jLC-cf-nkn" firstAttribute="leading" secondItem="d0X-gl-gaF" secondAttribute="trailing" constant="15" id="AJO-qm-DOJ"/>
@@ -60,4 +60,7 @@
             <point key="canvasLocation" x="-36" y="-343"/>
         </view>
     </objects>
+    <resources>
+        <image name="bob" width="900" height="600"/>
+    </resources>
 </document>
