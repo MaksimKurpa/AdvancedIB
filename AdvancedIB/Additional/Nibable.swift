@@ -26,63 +26,48 @@ private extension Nibable where Self: UIView {
         insertSubview(view, at: 0)
         view.translatesAutoresizingMaskIntoConstraints = false
         
-//        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[childView]|",
-//                                                      options: [],
-//                                                      metrics: nil,
-//                                                      views: ["childView": view]))
-//        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[childView]|",
-//                                                      options: [],
-//                                                      metrics: nil,
-//                                                      views: ["childView": view]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[childView]|",
+                                                      options: [],
+                                                      metrics: nil,
+                                                      views: ["childView": view]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[childView]|",
+                                                      options: [],
+                                                      metrics: nil,
+                                                      views: ["childView": view]))
     }
 }
 
-private func swapFirstItemsOfConstraintsDefinedInThisView(_ superview: UIView, betweenItem item1: UIView, andItem item2: UIView)
+private func copyConstraint(in superview: UIView,_ fromView: UIView, _ toView: UIView)
 {
-    var constraintsNew_item1: [NSLayoutConstraint]  = []
+    var constraintsOuter: [NSLayoutConstraint]  = []
     var constraintsInner: [NSLayoutConstraint]  = []
     
     for constraint in superview.constraints
     {
-        if (constraint.firstItem === item2)
+        if (constraint.firstItem === fromView)
         {
-            constraintsNew_item1.append(NSLayoutConstraint(item: item1, attribute: constraint.firstAttribute, relatedBy: constraint.relation, toItem: constraint.secondItem, attribute: constraint.secondAttribute, multiplier: constraint.multiplier, constant: constraint.constant))
+            constraintsOuter.append(NSLayoutConstraint(item: toView, attribute: constraint.firstAttribute, relatedBy: constraint.relation, toItem: constraint.secondItem, attribute: constraint.secondAttribute, multiplier: constraint.multiplier, constant: constraint.constant))
         }
-        else if (constraint.secondItem === item2)
+        else if (constraint.secondItem === fromView)
         {
-            constraintsNew_item1.append(NSLayoutConstraint(item: constraint.firstItem, attribute: constraint.secondAttribute, relatedBy: constraint.relation, toItem: item1, attribute: constraint.secondAttribute, multiplier: constraint.multiplier, constant: constraint.constant))
+            constraintsOuter.append(NSLayoutConstraint(item: constraint.firstItem!, attribute: constraint.secondAttribute, relatedBy: constraint.relation, toItem: toView, attribute: constraint.secondAttribute, multiplier: constraint.multiplier, constant: constraint.constant))
         }
     }
     
-    for constraint in item2.constraints {
-        if (constraint.firstItem === item2)
+    for constraint in fromView.constraints {
+        if (constraint.firstItem === fromView)
         {
-            constraintsInner.append(NSLayoutConstraint(item: item1, attribute: constraint.firstAttribute, relatedBy: constraint.relation, toItem: constraint.secondItem, attribute: constraint.secondAttribute, multiplier: constraint.multiplier, constant: constraint.constant))
+            constraintsInner.append(NSLayoutConstraint(item: toView, attribute: constraint.firstAttribute, relatedBy: constraint.relation, toItem: constraint.secondItem, attribute: constraint.secondAttribute, multiplier: constraint.multiplier, constant: constraint.constant))
         }
-        else if (constraint.secondItem === item2)
+        else if (constraint.secondItem === fromView)
         {
-            constraintsInner.append(NSLayoutConstraint(item: item1, attribute: constraint.secondAttribute, relatedBy: constraint.relation, toItem: constraint.secondItem, attribute: constraint.secondAttribute, multiplier: constraint.multiplier, constant: constraint.constant))
+            constraintsInner.append(NSLayoutConstraint(item: toView, attribute: constraint.secondAttribute, relatedBy: constraint.relation, toItem: constraint.secondItem, attribute: constraint.secondAttribute, multiplier: constraint.multiplier, constant: constraint.constant))
         }
     }
     
-//    superview.removeConstraints(constraintsToRemove);
-    superview.addConstraints(constraintsNew_item1);
-    item1.addConstraints(constraintsInner);
+    superview.addConstraints(constraintsOuter);
+    toView.addConstraints(constraintsInner);
 }
-
-func copyConstraints(fromView sourceView: UIView, toView destView: UIView) {
-    guard let sourceViewSuperview = sourceView.superview else {
-        return
-    }
-    for constraint in sourceViewSuperview.constraints {
-        if constraint.firstItem as? UIView == sourceView {
-            sourceViewSuperview.addConstraint(NSLayoutConstraint(item: destView, attribute: constraint.firstAttribute, relatedBy: constraint.relation, toItem: constraint.secondItem, attribute: constraint.secondAttribute, multiplier: constraint.multiplier, constant: constraint.constant))
-        } else if constraint.secondItem as? UIView == sourceView {
-            sourceViewSuperview.addConstraint(NSLayoutConstraint(item: constraint.firstItem, attribute: constraint.firstAttribute, relatedBy: constraint.relation, toItem: destView, attribute: constraint.secondAttribute, multiplier: constraint.multiplier, constant: constraint.constant))
-        }
-    }
-}
-
 
 class NibView: UIView, Nibable {
     override init(frame: CGRect) {
@@ -103,12 +88,18 @@ class NibView: UIView, Nibable {
         self.superview?.addSubview(nib)
 //        let constraints = self.constraints
         
-        swapFirstItemsOfConstraintsDefinedInThisView(self.superview!, betweenItem: nib, andItem: self)
-//        copyConstraints(fromView: self, toView: nib)
+        copyConstraint(in: self.superview!, self, nib)
+
         self.removeFromSuperview()
     }
     override func didMoveToSuperview() {
         
+    }
+    
+    deinit {
+        NSLog("asd")
+        
+        NSLog("asd")
     }
 }
 
