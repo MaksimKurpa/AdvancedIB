@@ -23,7 +23,7 @@ private extension Nibable where Self: UIView {
         backgroundColor = UIColor.clear
         let view = loadNib()
         view.frame = bounds
-        insertSubview(view, at: 0)
+        addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
         
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[childView]|",
@@ -37,37 +37,6 @@ private extension Nibable where Self: UIView {
     }
 }
 
-private func copyConstraint(in superview: UIView,_ fromView: UIView, _ toView: UIView)
-{
-    var constraintsOuter: [NSLayoutConstraint]  = []
-    var constraintsInner: [NSLayoutConstraint]  = []
-    
-    for constraint in superview.constraints
-    {
-        if (constraint.firstItem === fromView)
-        {
-            constraintsOuter.append(NSLayoutConstraint(item: toView, attribute: constraint.firstAttribute, relatedBy: constraint.relation, toItem: constraint.secondItem, attribute: constraint.secondAttribute, multiplier: constraint.multiplier, constant: constraint.constant))
-        }
-        else if (constraint.secondItem === fromView)
-        {
-            constraintsOuter.append(NSLayoutConstraint(item: constraint.firstItem!, attribute: constraint.secondAttribute, relatedBy: constraint.relation, toItem: toView, attribute: constraint.secondAttribute, multiplier: constraint.multiplier, constant: constraint.constant))
-        }
-    }
-    
-    for constraint in fromView.constraints {
-        if (constraint.firstItem === fromView)
-        {
-            constraintsInner.append(NSLayoutConstraint(item: toView, attribute: constraint.firstAttribute, relatedBy: constraint.relation, toItem: constraint.secondItem, attribute: constraint.secondAttribute, multiplier: constraint.multiplier, constant: constraint.constant))
-        }
-        else if (constraint.secondItem === fromView)
-        {
-            constraintsInner.append(NSLayoutConstraint(item: toView, attribute: constraint.secondAttribute, relatedBy: constraint.relation, toItem: constraint.secondItem, attribute: constraint.secondAttribute, multiplier: constraint.multiplier, constant: constraint.constant))
-        }
-    }
-    
-    superview.addConstraints(constraintsOuter);
-    toView.addConstraints(constraintsInner);
-}
 
 class NibView: UIView, Nibable {
     override init(frame: CGRect) {
@@ -78,28 +47,6 @@ class NibView: UIView, Nibable {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         nibSetup()
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        guard let nib = self.subviews.first else { return }
-        nib.removeFromSuperview()
-        self.superview?.addSubview(nib)
-//        let constraints = self.constraints
-        
-        copyConstraint(in: self.superview!, self, nib)
-
-        self.removeFromSuperview()
-    }
-    override func didMoveToSuperview() {
-        
-    }
-    
-    deinit {
-        NSLog("asd")
-        
-        NSLog("asd")
     }
 }
 

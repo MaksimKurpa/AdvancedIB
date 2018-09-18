@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2885864C214D4DC80050C35C /* AssociatedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885864B214D4DC80050C35C /* AssociatedValues.swift */; };
 		86E56A4139CA41C77C5646B4 /* Pods_AdvancedIB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479839FA1D8231D59A55A2FC /* Pods_AdvancedIB.framework */; };
 		B50B90C2210B6DA300E780EC /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50B90C1210B6DA300E780EC /* UIScreenExtension.swift */; };
 		B50D13A62121CA8E001D2E05 /* Nibable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50D13A52121CA8E001D2E05 /* Nibable.swift */; };
 		B50D13A92121CD80001D2E05 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B50D13A82121CD80001D2E05 /* FirstView.xib */; };
 		B50D13AB2121CDA0001D2E05 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50D13AA2121CDA0001D2E05 /* FirstView.swift */; };
+		B5A63BD9214C1134009E51B9 /* NSLayoutConstrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A63BD8214C1134009E51B9 /* NSLayoutConstrait.swift */; };
 		B5FEDC42210A232B00B89248 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FEDC41210A232B00B89248 /* AppDelegate.swift */; };
 		B5FEDC44210A232B00B89248 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FEDC43210A232B00B89248 /* ViewController.swift */; };
 		B5FEDC47210A232B00B89248 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FEDC45210A232B00B89248 /* Main.storyboard */; };
@@ -21,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2885864B214D4DC80050C35C /* AssociatedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedValues.swift; sourceTree = "<group>"; };
 		479839FA1D8231D59A55A2FC /* Pods_AdvancedIB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvancedIB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C7E7C1EE49FB82E573FAC5 /* Pods-AdvancedIB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvancedIB.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdvancedIB/Pods-AdvancedIB.release.xcconfig"; sourceTree = "<group>"; };
 		AAC69CEB841F6887F347AED7 /* Pods-AdvancedIB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvancedIB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdvancedIB/Pods-AdvancedIB.debug.xcconfig"; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		B50D13A52121CA8E001D2E05 /* Nibable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nibable.swift; sourceTree = "<group>"; };
 		B50D13A82121CD80001D2E05 /* FirstView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
 		B50D13AA2121CDA0001D2E05 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		B5A63BD8214C1134009E51B9 /* NSLayoutConstrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstrait.swift; sourceTree = "<group>"; };
 		B5FEDC3E210A232B00B89248 /* AdvancedIB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedIB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FEDC41210A232B00B89248 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5FEDC43210A232B00B89248 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 				B5FEDC53210A256A00B89248 /* Utils.swift */,
 				B50B90C1210B6DA300E780EC /* UIScreenExtension.swift */,
 				B50D13A52121CA8E001D2E05 /* Nibable.swift */,
+				B5A63BD8214C1134009E51B9 /* NSLayoutConstrait.swift */,
+				2885864B214D4DC80050C35C /* AssociatedValues.swift */,
 			);
 			path = Additional;
 			sourceTree = "<group>";
@@ -206,10 +212,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AdvancedIB/Pods-AdvancedIB-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AssistantKit/AssistantKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GBDeviceInfo/GBDeviceInfo.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AssistantKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GBDeviceInfo.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,9 +233,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5FEDC44210A232B00B89248 /* ViewController.swift in Sources */,
+				2885864C214D4DC80050C35C /* AssociatedValues.swift in Sources */,
 				B50D13AB2121CDA0001D2E05 /* FirstView.swift in Sources */,
 				B50B90C2210B6DA300E780EC /* UIScreenExtension.swift in Sources */,
 				B5FEDC42210A232B00B89248 /* AppDelegate.swift in Sources */,
+				B5A63BD9214C1134009E51B9 /* NSLayoutConstrait.swift in Sources */,
 				B5FEDC54210A256A00B89248 /* Utils.swift in Sources */,
 				B50D13A62121CA8E001D2E05 /* Nibable.swift in Sources */,
 			);

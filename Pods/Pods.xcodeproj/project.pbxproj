@@ -7,100 +7,157 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		027A57E68686046406256C19DFFBDD8A /* GBDeviceInfoTypes_Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 029F0BB7BFB9E1A6C73C847C9FDF6314 /* GBDeviceInfoTypes_Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D544A919AC7609085DE9D73B8FBF62E /* GBDeviceInfoTypes_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F162314BA13460A2C654EA10901C83C9 /* GBDeviceInfoTypes_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24A836BA0B72DAEF081FEA44CE88B733 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		3B9A8079BD6CCC64554B45D3738F8F53 /* GBDeviceInfo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08603FD5A8B91AAE4501B855A7B2DBFF /* GBDeviceInfo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F3CA482BFEE189BE130158725229D33 /* GBDeviceInfo_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F1D71E88109C6FAE174EF698550D5333 /* GBDeviceInfo_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		418973A9B2A2791598189F6219FE4810 /* GBDeviceInfo_Common.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD8E613192A39B8C4E28E6B599F2245 /* GBDeviceInfo_Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4302970314A44348B0B5FA787CAA79A1 /* GBDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB4B836A43A89ACBC260EAD69D46B1A /* GBDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55F2F917B173CE6DD4B77F376B4A002F /* GBDeviceInfo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E016679466217C730BF67CC898030 /* GBDeviceInfo-dummy.m */; };
-		63B482C448F0306C4C42F4107881075D /* GBDeviceInfo_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 4454C2F442A8B0391EDEAC7C33B646A8 /* GBDeviceInfo_iOS.m */; };
-		683D31B61C4B1E4547597B2F6E25DEC5 /* GBDeviceInfoInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DCD2C00D68F527A9B9C312D8E184C13 /* GBDeviceInfoInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A76D41B855BAD472F19556042F94F85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7D96E63671A9F9D0DD311DD5EF2B6247 /* GBDeviceInfo_Common.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD92985C162D21C54EA2376FB58D06A /* GBDeviceInfo_Common.m */; };
-		9232FD0C4B0D40238668DFB827F835C1 /* GBDeviceInfo_Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 021D1D0A252022D081A19D261FD228AC /* GBDeviceInfo_Subclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A91C91E7E1D299199A6114AA8298CFCA /* Pods-AdvancedIB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C606C0FA8DD3A449E94FD1CC26A71592 /* Pods-AdvancedIB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFD1AC39ACC335729BBCAD85F2107170 /* Pods-AdvancedIB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7ECF530D0458FE0AF727FFC0C83003C /* Pods-AdvancedIB-dummy.m */; };
+		01592B92F49333E8B8AE333BDB5C2F9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		025A56D8E152584FC1DB63163CB3DCBB /* GBDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B6EA83F753A72851E9AD05F5F240A02 /* GBDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09EF5AB2A30F1514A0E2BEE8CEBB4C4C /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77334904679A2064D3B54CB3B99130C9 /* Device.swift */; };
+		1D01C738856FAE9F960D73FBED918016 /* AssistantKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BCA76CE3FCB788CB15BD2554374B41 /* AssistantKit-dummy.m */; };
+		1DC8547263D1006A5FD904168389465D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		1DD37AF41519D225C8DA3423ADB766DD /* GBDeviceInfo_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = AE20D36F4B577E9F738F57CF325E3F16 /* GBDeviceInfo_iOS.m */; };
+		34C888272A155F37CE01E2DA9EA253FE /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C794ED58F302E9008B7B822440FB52 /* Screen.swift */; };
+		4B94C7994683B8AF0A06586362B3F9CE /* Pods-AdvancedIB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7ECF530D0458FE0AF727FFC0C83003C /* Pods-AdvancedIB-dummy.m */; };
+		58C1E3AD8485380264973957E2F6CB08 /* GBDeviceInfo_Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 294B83F454B7FDE0A58C1963348A3B85 /* GBDeviceInfo_Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61D9AB56D5F52CC422A17F2FFC27D4CD /* GBDeviceInfoTypes_Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 222CE175F9CD6F9EF035E3D16C22E55F /* GBDeviceInfoTypes_Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		710894EB2D59CF13C4C457DF959AA419 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF87DD6BC4C0877F23B1E3DA71BE80C /* Bundle.swift */; };
+		7C9EE90EF63BEC14C470616EB79E513C /* AssistantKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB65090B655334FBC867C9A057D3D09C /* AssistantKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0C5A02B456BE012FBEEF4C8B2B3F63F /* GBDeviceInfoTypes_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 57C4DD1E9A66665A7F9B823F1F4F48A4 /* GBDeviceInfoTypes_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6C366E09FB5396258AF1957A7DAE50F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		A7258C5BB04CC8E6D9122B43554A98BA /* GBDeviceInfo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9C364284424958334FEFB560FE1F39B /* GBDeviceInfo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9D22F057A2888476970079CE0D5714A /* GBDeviceInfoInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 660FFA1766250322FCDD7EA5B6F0F690 /* GBDeviceInfoInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC952134F91F1449D089C452F10ADC0D /* OS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F297C82A952EDFB398CCCEEDD924842 /* OS.swift */; };
+		BE88522CF631A1965A48B46CAC8770EB /* GBDeviceInfo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 276FD8CE2AC78DBED7F5A5420791BF86 /* GBDeviceInfo-dummy.m */; };
+		BF537EAA2ACB94BA960119D32E86E88F /* GBDeviceInfo_Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 82CD62A2C3097C7EE0F97C6B435F236C /* GBDeviceInfo_Subclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C554E113A0EB4ACC8E8057DC8F2E0A87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
+		CD8F256BB1E8911F4106EEDE363445E1 /* GBDeviceInfo_Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 423F8522445A8940CB9422CBAF3A763C /* GBDeviceInfo_Common.m */; };
+		D69B72641FB9D3E0CFA7E7A10EC66F7E /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBEA6E1BE33A5AF70B6FEB3DAAC4D0 /* Type.swift */; };
+		EE0FD47C41432F1B41E69BF853D50A85 /* GBDeviceInfo_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 00842B6C209624D6A217F40FAE5F64A0 /* GBDeviceInfo_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8088B2D52554891B1CA494CA187C62C /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B76BEE99364D8A92F81ADEE0C677B4E /* Environment.swift */; };
+		FEF058877EFA835673710DB76F96C451 /* Pods-AdvancedIB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C606C0FA8DD3A449E94FD1CC26A71592 /* Pods-AdvancedIB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A492BBE46C86057E1C44E0BA26A12CFC /* PBXContainerItemProxy */ = {
+		0C2FBD003EEA333DDD41B0F326E350D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 028DFD27F186DB6013DC9AD5D06DBF2C;
+			remoteGlobalIDString = 07B468BCC95D3DBCB25567CE39934C92;
 			remoteInfo = GBDeviceInfo;
+		};
+		8E5204CA63ACC50C800D4FB7B79B6026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B21DB8D1DC05B59A6C718909108CA619;
+			remoteInfo = AssistantKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		021D1D0A252022D081A19D261FD228AC /* GBDeviceInfo_Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfo_Subclass.h; path = GBDeviceInfo/GBDeviceInfo_Subclass.h; sourceTree = "<group>"; };
-		029F0BB7BFB9E1A6C73C847C9FDF6314 /* GBDeviceInfoTypes_Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfoTypes_Common.h; path = GBDeviceInfo/GBDeviceInfoTypes_Common.h; sourceTree = "<group>"; };
+		00842B6C209624D6A217F40FAE5F64A0 /* GBDeviceInfo_iOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfo_iOS.h; path = GBDeviceInfo/GBDeviceInfo_iOS.h; sourceTree = "<group>"; };
+		01E8B18804638B2563DE24C5B03148A1 /* AssistantKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AssistantKit.modulemap; sourceTree = "<group>"; };
 		030BB1802E99578AD9A817BED7C14F2B /* Pods-AdvancedIB-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdvancedIB-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0608246DFA0DF3B3D24D08E2C03697FD /* GBDeviceInfo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GBDeviceInfo.modulemap; sourceTree = "<group>"; };
-		0744E878391EE05B9CBD269C6024F8B0 /* GBDeviceInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GBDeviceInfo.framework; path = GBDeviceInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		08603FD5A8B91AAE4501B855A7B2DBFF /* GBDeviceInfo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GBDeviceInfo-umbrella.h"; sourceTree = "<group>"; };
-		1CB4B836A43A89ACBC260EAD69D46B1A /* GBDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfo.h; path = GBDeviceInfo/GBDeviceInfo.h; sourceTree = "<group>"; };
+		120CAB09527690246AC8CB9D22751420 /* AssistantKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AssistantKit-prefix.pch"; sourceTree = "<group>"; };
+		1F297C82A952EDFB398CCCEEDD924842 /* OS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OS.swift; path = AssistantKit/Classes/OS.swift; sourceTree = "<group>"; };
+		222CE175F9CD6F9EF035E3D16C22E55F /* GBDeviceInfoTypes_Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfoTypes_Common.h; path = GBDeviceInfo/GBDeviceInfoTypes_Common.h; sourceTree = "<group>"; };
 		25687FC603F97558F0D83009FB78718A /* Pods-AdvancedIB-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdvancedIB-acknowledgements.plist"; sourceTree = "<group>"; };
-		432E05F4B0E95E5766283809B49A283B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4454C2F442A8B0391EDEAC7C33B646A8 /* GBDeviceInfo_iOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBDeviceInfo_iOS.m; path = GBDeviceInfo/GBDeviceInfo_iOS.m; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6DCD2C00D68F527A9B9C312D8E184C13 /* GBDeviceInfoInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfoInterface.h; path = GBDeviceInfo/GBDeviceInfoInterface.h; sourceTree = "<group>"; };
+		276FD8CE2AC78DBED7F5A5420791BF86 /* GBDeviceInfo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GBDeviceInfo-dummy.m"; sourceTree = "<group>"; };
+		28CB83BCD7EA1C6FA07FDAADFDEBB163 /* AssistantKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AssistantKit.framework; path = AssistantKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		294B83F454B7FDE0A58C1963348A3B85 /* GBDeviceInfo_Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfo_Common.h; path = GBDeviceInfo/GBDeviceInfo_Common.h; sourceTree = "<group>"; };
+		2B341CA9C87C0AD12AD906AADEAE2609 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D6A34A622F0008CB6E031FA546069D6 /* Pods_AdvancedIB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AdvancedIB.framework; path = "Pods-AdvancedIB.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A634C7E39AC241EC352306946644C69 /* GBDeviceInfo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GBDeviceInfo.xcconfig; sourceTree = "<group>"; };
+		423F8522445A8940CB9422CBAF3A763C /* GBDeviceInfo_Common.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBDeviceInfo_Common.m; path = GBDeviceInfo/GBDeviceInfo_Common.m; sourceTree = "<group>"; };
+		4B6EA83F753A72851E9AD05F5F240A02 /* GBDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfo.h; path = GBDeviceInfo/GBDeviceInfo.h; sourceTree = "<group>"; };
+		50F260164D18F0CDCAE9BB0307D40673 /* GBDeviceInfo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GBDeviceInfo.modulemap; sourceTree = "<group>"; };
+		57C4DD1E9A66665A7F9B823F1F4F48A4 /* GBDeviceInfoTypes_iOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfoTypes_iOS.h; path = GBDeviceInfo/GBDeviceInfoTypes_iOS.h; sourceTree = "<group>"; };
+		660FFA1766250322FCDD7EA5B6F0F690 /* GBDeviceInfoInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfoInterface.h; path = GBDeviceInfo/GBDeviceInfoInterface.h; sourceTree = "<group>"; };
 		7000EAC79296CEC1F0AC51D4A4488796 /* Pods-AdvancedIB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AdvancedIB.modulemap"; sourceTree = "<group>"; };
-		81378A980BA6E4F4C9B8C0B7E750CE18 /* GBDeviceInfo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GBDeviceInfo.xcconfig; sourceTree = "<group>"; };
-		907FDAAD7482F03C6BA48217E6A21246 /* GBDeviceInfo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GBDeviceInfo-prefix.pch"; sourceTree = "<group>"; };
-		91C2777E0376B102D78FBE356A02668E /* Pods_AdvancedIB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AdvancedIB.framework; path = "Pods-AdvancedIB.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77334904679A2064D3B54CB3B99130C9 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = AssistantKit/Classes/Device.swift; sourceTree = "<group>"; };
+		7CDBEA6E1BE33A5AF70B6FEB3DAAC4D0 /* Type.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type.swift; path = AssistantKit/Classes/Type.swift; sourceTree = "<group>"; };
+		82CD62A2C3097C7EE0F97C6B435F236C /* GBDeviceInfo_Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfo_Subclass.h; path = GBDeviceInfo/GBDeviceInfo_Subclass.h; sourceTree = "<group>"; };
+		83BCA76CE3FCB788CB15BD2554374B41 /* AssistantKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AssistantKit-dummy.m"; sourceTree = "<group>"; };
+		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96C794ED58F302E9008B7B822440FB52 /* Screen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Screen.swift; path = AssistantKit/Classes/Screen.swift; sourceTree = "<group>"; };
+		9B76BEE99364D8A92F81ADEE0C677B4E /* Environment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Environment.swift; path = AssistantKit/Classes/Environment.swift; sourceTree = "<group>"; };
 		9E033B8F4B13B0FF0D08A0599BE4D278 /* Pods-AdvancedIB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdvancedIB.debug.xcconfig"; sourceTree = "<group>"; };
+		9EF87DD6BC4C0877F23B1E3DA71BE80C /* Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bundle.swift; path = AssistantKit/Classes/Bundle.swift; sourceTree = "<group>"; };
 		A05EC03C5B7BD4BC8A3F76AED8520810 /* Pods-AdvancedIB-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdvancedIB-frameworks.sh"; sourceTree = "<group>"; };
 		A50E01EC41B49F88C83B09017226133B /* Pods-AdvancedIB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdvancedIB.release.xcconfig"; sourceTree = "<group>"; };
-		ADD8E613192A39B8C4E28E6B599F2245 /* GBDeviceInfo_Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfo_Common.h; path = GBDeviceInfo/GBDeviceInfo_Common.h; sourceTree = "<group>"; };
+		A53DFBBE7BA712855918D0282D7A6A58 /* AssistantKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AssistantKit.xcconfig; sourceTree = "<group>"; };
+		AE20D36F4B577E9F738F57CF325E3F16 /* GBDeviceInfo_iOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBDeviceInfo_iOS.m; path = GBDeviceInfo/GBDeviceInfo_iOS.m; sourceTree = "<group>"; };
+		BB02B2D326FBB0116663EEFB4CB4E3E7 /* GBDeviceInfo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GBDeviceInfo-prefix.pch"; sourceTree = "<group>"; };
+		BB65090B655334FBC867C9A057D3D09C /* AssistantKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AssistantKit-umbrella.h"; sourceTree = "<group>"; };
+		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C606C0FA8DD3A449E94FD1CC26A71592 /* Pods-AdvancedIB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdvancedIB-umbrella.h"; sourceTree = "<group>"; };
 		C7ECF530D0458FE0AF727FFC0C83003C /* Pods-AdvancedIB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdvancedIB-dummy.m"; sourceTree = "<group>"; };
+		D9C364284424958334FEFB560FE1F39B /* GBDeviceInfo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GBDeviceInfo-umbrella.h"; sourceTree = "<group>"; };
+		DC08B22B5C6165E6AD89F88F49A92C2B /* GBDeviceInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GBDeviceInfo.framework; path = GBDeviceInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC439D99F6C3B268DB144E410137CE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6961E5DEE8C492D7CB2BC1D656B5D19 /* Pods-AdvancedIB-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdvancedIB-resources.sh"; sourceTree = "<group>"; };
-		EDD92985C162D21C54EA2376FB58D06A /* GBDeviceInfo_Common.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBDeviceInfo_Common.m; path = GBDeviceInfo/GBDeviceInfo_Common.m; sourceTree = "<group>"; };
-		F162314BA13460A2C654EA10901C83C9 /* GBDeviceInfoTypes_iOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfoTypes_iOS.h; path = GBDeviceInfo/GBDeviceInfoTypes_iOS.h; sourceTree = "<group>"; };
-		F1D71E88109C6FAE174EF698550D5333 /* GBDeviceInfo_iOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfo_iOS.h; path = GBDeviceInfo/GBDeviceInfo_iOS.h; sourceTree = "<group>"; };
-		FE8E016679466217C730BF67CC898030 /* GBDeviceInfo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GBDeviceInfo-dummy.m"; sourceTree = "<group>"; };
+		E6E9C60B99CB485126AFDEC382073C19 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1AFD26B5B25ED04005DAA6E3F06175D7 /* Frameworks */ = {
+		568D9EE89768803BED523ED2819701D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A76D41B855BAD472F19556042F94F85 /* Foundation.framework in Frameworks */,
+				01592B92F49333E8B8AE333BDB5C2F9D /* Foundation.framework in Frameworks */,
+				C554E113A0EB4ACC8E8057DC8F2E0A87 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB282F229FF41D8ED1BDCDD563833CC4 /* Frameworks */ = {
+		63F2A4903414A6DA3ED5FFB56EFF75E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24A836BA0B72DAEF081FEA44CE88B733 /* Foundation.framework in Frameworks */,
+				A6C366E09FB5396258AF1957A7DAE50F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F2FE182C588F65CC71A968684427C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC8547263D1006A5FD904168389465D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0664A520F046F94F9AD25587FD76038B /* Products */ = {
+		03257B843C549A329F1B288442A6D830 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0744E878391EE05B9CBD269C6024F8B0 /* GBDeviceInfo.framework */,
-				91C2777E0376B102D78FBE356A02668E /* Pods_AdvancedIB.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		0C5C43981EABFF896F3AADCB38FD8396 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4C9779EE4C8FE78BD62AC3000CB90C38 /* GBDeviceInfo */,
+				39B74A970D51D9B1D8B5F775455885F4 /* AssistantKit */,
+				B89BC95485148BB889E71B88E9E17509 /* GBDeviceInfo */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				908E902E026C5C22904CF9014A5604AD /* Foundation.framework */,
+				BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1F841FB591856D943AEC8D5C433F4F79 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4B6EA83F753A72851E9AD05F5F240A02 /* GBDeviceInfo.h */,
+				294B83F454B7FDE0A58C1963348A3B85 /* GBDeviceInfo_Common.h */,
+				423F8522445A8940CB9422CBAF3A763C /* GBDeviceInfo_Common.m */,
+				00842B6C209624D6A217F40FAE5F64A0 /* GBDeviceInfo_iOS.h */,
+				AE20D36F4B577E9F738F57CF325E3F16 /* GBDeviceInfo_iOS.m */,
+				82CD62A2C3097C7EE0F97C6B435F236C /* GBDeviceInfo_Subclass.h */,
+				660FFA1766250322FCDD7EA5B6F0F690 /* GBDeviceInfoInterface.h */,
+				222CE175F9CD6F9EF035E3D16C22E55F /* GBDeviceInfoTypes_Common.h */,
+				57C4DD1E9A66665A7F9B823F1F4F48A4 /* GBDeviceInfoTypes_iOS.h */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		2A695D42FD7494BCA4BFF5D5B4805795 /* Targets Support Files */ = {
@@ -109,6 +166,21 @@
 				3DB325A8FA52D55FDACE2FDBEB1077A0 /* Pods-AdvancedIB */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		39B74A970D51D9B1D8B5F775455885F4 /* AssistantKit */ = {
+			isa = PBXGroup;
+			children = (
+				9EF87DD6BC4C0877F23B1E3DA71BE80C /* Bundle.swift */,
+				77334904679A2064D3B54CB3B99130C9 /* Device.swift */,
+				9B76BEE99364D8A92F81ADEE0C677B4E /* Environment.swift */,
+				1F297C82A952EDFB398CCCEEDD924842 /* OS.swift */,
+				96C794ED58F302E9008B7B822440FB52 /* Screen.swift */,
+				7CDBEA6E1BE33A5AF70B6FEB3DAAC4D0 /* Type.swift */,
+				C5CEDE7A45EA40CD13F745075855EC74 /* Support Files */,
+			);
+			name = AssistantKit;
+			path = AssistantKit;
 			sourceTree = "<group>";
 		};
 		3DB325A8FA52D55FDACE2FDBEB1077A0 /* Pods-AdvancedIB */ = {
@@ -129,109 +201,118 @@
 			path = "Target Support Files/Pods-AdvancedIB";
 			sourceTree = "<group>";
 		};
-		4C9779EE4C8FE78BD62AC3000CB90C38 /* GBDeviceInfo */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E5D10256C6E38A541606A965F6217145 /* Core */,
-				F8808AADAF5F69ADF003C15BCFD7BC5F /* Support Files */,
+				10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */,
 			);
-			name = GBDeviceInfo;
-			path = GBDeviceInfo;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		720B814F1728A7F8868BE5375D707936 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28CB83BCD7EA1C6FA07FDAADFDEBB163 /* AssistantKit.framework */,
+				DC08B22B5C6165E6AD89F88F49A92C2B /* GBDeviceInfo.framework */,
+				2D6A34A622F0008CB6E031FA546069D6 /* Pods_AdvancedIB.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				0C5C43981EABFF896F3AADCB38FD8396 /* Pods */,
-				0664A520F046F94F9AD25587FD76038B /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				03257B843C549A329F1B288442A6D830 /* Pods */,
+				720B814F1728A7F8868BE5375D707936 /* Products */,
 				2A695D42FD7494BCA4BFF5D5B4805795 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		B11F1AA60F9740033A0D7F490C8D387A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		E5D10256C6E38A541606A965F6217145 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				1CB4B836A43A89ACBC260EAD69D46B1A /* GBDeviceInfo.h */,
-				ADD8E613192A39B8C4E28E6B599F2245 /* GBDeviceInfo_Common.h */,
-				EDD92985C162D21C54EA2376FB58D06A /* GBDeviceInfo_Common.m */,
-				F1D71E88109C6FAE174EF698550D5333 /* GBDeviceInfo_iOS.h */,
-				4454C2F442A8B0391EDEAC7C33B646A8 /* GBDeviceInfo_iOS.m */,
-				021D1D0A252022D081A19D261FD228AC /* GBDeviceInfo_Subclass.h */,
-				6DCD2C00D68F527A9B9C312D8E184C13 /* GBDeviceInfoInterface.h */,
-				029F0BB7BFB9E1A6C73C847C9FDF6314 /* GBDeviceInfoTypes_Common.h */,
-				F162314BA13460A2C654EA10901C83C9 /* GBDeviceInfoTypes_iOS.h */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		F8808AADAF5F69ADF003C15BCFD7BC5F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0608246DFA0DF3B3D24D08E2C03697FD /* GBDeviceInfo.modulemap */,
-				81378A980BA6E4F4C9B8C0B7E750CE18 /* GBDeviceInfo.xcconfig */,
-				FE8E016679466217C730BF67CC898030 /* GBDeviceInfo-dummy.m */,
-				907FDAAD7482F03C6BA48217E6A21246 /* GBDeviceInfo-prefix.pch */,
-				08603FD5A8B91AAE4501B855A7B2DBFF /* GBDeviceInfo-umbrella.h */,
-				432E05F4B0E95E5766283809B49A283B /* Info.plist */,
+				50F260164D18F0CDCAE9BB0307D40673 /* GBDeviceInfo.modulemap */,
+				3A634C7E39AC241EC352306946644C69 /* GBDeviceInfo.xcconfig */,
+				276FD8CE2AC78DBED7F5A5420791BF86 /* GBDeviceInfo-dummy.m */,
+				BB02B2D326FBB0116663EEFB4CB4E3E7 /* GBDeviceInfo-prefix.pch */,
+				D9C364284424958334FEFB560FE1F39B /* GBDeviceInfo-umbrella.h */,
+				E6E9C60B99CB485126AFDEC382073C19 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/GBDeviceInfo";
 			sourceTree = "<group>";
 		};
+		B89BC95485148BB889E71B88E9E17509 /* GBDeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1F841FB591856D943AEC8D5C433F4F79 /* Core */,
+				B11F1AA60F9740033A0D7F490C8D387A /* Support Files */,
+			);
+			name = GBDeviceInfo;
+			path = GBDeviceInfo;
+			sourceTree = "<group>";
+		};
+		C5CEDE7A45EA40CD13F745075855EC74 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				01E8B18804638B2563DE24C5B03148A1 /* AssistantKit.modulemap */,
+				A53DFBBE7BA712855918D0282D7A6A58 /* AssistantKit.xcconfig */,
+				83BCA76CE3FCB788CB15BD2554374B41 /* AssistantKit-dummy.m */,
+				120CAB09527690246AC8CB9D22751420 /* AssistantKit-prefix.pch */,
+				BB65090B655334FBC867C9A057D3D09C /* AssistantKit-umbrella.h */,
+				2B341CA9C87C0AD12AD906AADEAE2609 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AssistantKit";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		35C5AADD7E1BB57B68AAFB8FE4ED7696 /* Headers */ = {
+		38682FF3F4A2ADED0D2B909A2AC9686E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B9A8079BD6CCC64554B45D3738F8F53 /* GBDeviceInfo-umbrella.h in Headers */,
-				4302970314A44348B0B5FA787CAA79A1 /* GBDeviceInfo.h in Headers */,
-				418973A9B2A2791598189F6219FE4810 /* GBDeviceInfo_Common.h in Headers */,
-				3F3CA482BFEE189BE130158725229D33 /* GBDeviceInfo_iOS.h in Headers */,
-				9232FD0C4B0D40238668DFB827F835C1 /* GBDeviceInfo_Subclass.h in Headers */,
-				683D31B61C4B1E4547597B2F6E25DEC5 /* GBDeviceInfoInterface.h in Headers */,
-				027A57E68686046406256C19DFFBDD8A /* GBDeviceInfoTypes_Common.h in Headers */,
-				1D544A919AC7609085DE9D73B8FBF62E /* GBDeviceInfoTypes_iOS.h in Headers */,
+				FEF058877EFA835673710DB76F96C451 /* Pods-AdvancedIB-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4642E8906E74D6FBC5B562F41AA23C29 /* Headers */ = {
+		74F4587C442201281244DC13685A9BD3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A91C91E7E1D299199A6114AA8298CFCA /* Pods-AdvancedIB-umbrella.h in Headers */,
+				A7258C5BB04CC8E6D9122B43554A98BA /* GBDeviceInfo-umbrella.h in Headers */,
+				025A56D8E152584FC1DB63163CB3DCBB /* GBDeviceInfo.h in Headers */,
+				58C1E3AD8485380264973957E2F6CB08 /* GBDeviceInfo_Common.h in Headers */,
+				EE0FD47C41432F1B41E69BF853D50A85 /* GBDeviceInfo_iOS.h in Headers */,
+				BF537EAA2ACB94BA960119D32E86E88F /* GBDeviceInfo_Subclass.h in Headers */,
+				A9D22F057A2888476970079CE0D5714A /* GBDeviceInfoInterface.h in Headers */,
+				61D9AB56D5F52CC422A17F2FFC27D4CD /* GBDeviceInfoTypes_Common.h in Headers */,
+				A0C5A02B456BE012FBEEF4C8B2B3F63F /* GBDeviceInfoTypes_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE7DF8570D00512A77CE5E5DFD465845 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C9EE90EF63BEC14C470616EB79E513C /* AssistantKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		028DFD27F186DB6013DC9AD5D06DBF2C /* GBDeviceInfo */ = {
+		07B468BCC95D3DBCB25567CE39934C92 /* GBDeviceInfo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D00F131B0761F69BD552BF43EA7DF0C /* Build configuration list for PBXNativeTarget "GBDeviceInfo" */;
+			buildConfigurationList = F3ABBD1F1F05350F67AD4B5827C9E12A /* Build configuration list for PBXNativeTarget "GBDeviceInfo" */;
 			buildPhases = (
-				AEC9C1541CAD4C1D99AB2FC4EE069D29 /* Sources */,
-				DB282F229FF41D8ED1BDCDD563833CC4 /* Frameworks */,
-				35C5AADD7E1BB57B68AAFB8FE4ED7696 /* Headers */,
+				74F4587C442201281244DC13685A9BD3 /* Headers */,
+				DD9F8A7B4D1F72047E01471977A8BBF0 /* Sources */,
+				69F2FE182C588F65CC71A968684427C7 /* Frameworks */,
+				F9DD9F19F9C55A7186547C9AF203F3E4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -239,25 +320,45 @@
 			);
 			name = GBDeviceInfo;
 			productName = GBDeviceInfo;
-			productReference = 0744E878391EE05B9CBD269C6024F8B0 /* GBDeviceInfo.framework */;
+			productReference = DC08B22B5C6165E6AD89F88F49A92C2B /* GBDeviceInfo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E02A5FD6F642D24588440B620AF5C008 /* Pods-AdvancedIB */ = {
+		B111C71A9EBC86E7E0DD7D7BC51DD8E7 /* Pods-AdvancedIB */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC15CFCBCFB0883A8C5422189A134BA9 /* Build configuration list for PBXNativeTarget "Pods-AdvancedIB" */;
+			buildConfigurationList = 22CF681C3BAF67D0843DB4973F19B89D /* Build configuration list for PBXNativeTarget "Pods-AdvancedIB" */;
 			buildPhases = (
-				809B59663930A89F6C891A499972E051 /* Sources */,
-				1AFD26B5B25ED04005DAA6E3F06175D7 /* Frameworks */,
-				4642E8906E74D6FBC5B562F41AA23C29 /* Headers */,
+				38682FF3F4A2ADED0D2B909A2AC9686E /* Headers */,
+				3766C1878DF05707F6E15B8384C4B719 /* Sources */,
+				63F2A4903414A6DA3ED5FFB56EFF75E0 /* Frameworks */,
+				9FC57EBED97BA3319274DBDE8003C252 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4CBB2C6A61BB7D8C39F224E0EF013641 /* PBXTargetDependency */,
+				1D02CAA268A29180171656E6EB2AA1B2 /* PBXTargetDependency */,
+				C7E21BB3047CF5244A4DD5410826C6BD /* PBXTargetDependency */,
 			);
 			name = "Pods-AdvancedIB";
 			productName = "Pods-AdvancedIB";
-			productReference = 91C2777E0376B102D78FBE356A02668E /* Pods_AdvancedIB.framework */;
+			productReference = 2D6A34A622F0008CB6E031FA546069D6 /* Pods_AdvancedIB.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B21DB8D1DC05B59A6C718909108CA619 /* AssistantKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9828B8C949E8D7694D75870D2114ACE4 /* Build configuration list for PBXNativeTarget "AssistantKit" */;
+			buildPhases = (
+				FE7DF8570D00512A77CE5E5DFD465845 /* Headers */,
+				9CD8A35DA70BD8CA6803DD2FEC371BA6 /* Sources */,
+				568D9EE89768803BED523ED2819701D9 /* Frameworks */,
+				01F1DDDA2C0901D155DF0542CAA9AD7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AssistantKit;
+			productName = AssistantKit;
+			productReference = 28CB83BCD7EA1C6FA07FDAADFDEBB163 /* AssistantKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -277,48 +378,187 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 0664A520F046F94F9AD25587FD76038B /* Products */;
+			productRefGroup = 720B814F1728A7F8868BE5375D707936 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				028DFD27F186DB6013DC9AD5D06DBF2C /* GBDeviceInfo */,
-				E02A5FD6F642D24588440B620AF5C008 /* Pods-AdvancedIB */,
+				B21DB8D1DC05B59A6C718909108CA619 /* AssistantKit */,
+				07B468BCC95D3DBCB25567CE39934C92 /* GBDeviceInfo */,
+				B111C71A9EBC86E7E0DD7D7BC51DD8E7 /* Pods-AdvancedIB */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		809B59663930A89F6C891A499972E051 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		01F1DDDA2C0901D155DF0542CAA9AD7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFD1AC39ACC335729BBCAD85F2107170 /* Pods-AdvancedIB-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEC9C1541CAD4C1D99AB2FC4EE069D29 /* Sources */ = {
+		9FC57EBED97BA3319274DBDE8003C252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9DD9F19F9C55A7186547C9AF203F3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3766C1878DF05707F6E15B8384C4B719 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F2F917B173CE6DD4B77F376B4A002F /* GBDeviceInfo-dummy.m in Sources */,
-				7D96E63671A9F9D0DD311DD5EF2B6247 /* GBDeviceInfo_Common.m in Sources */,
-				63B482C448F0306C4C42F4107881075D /* GBDeviceInfo_iOS.m in Sources */,
+				4B94C7994683B8AF0A06586362B3F9CE /* Pods-AdvancedIB-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD8A35DA70BD8CA6803DD2FEC371BA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D01C738856FAE9F960D73FBED918016 /* AssistantKit-dummy.m in Sources */,
+				710894EB2D59CF13C4C457DF959AA419 /* Bundle.swift in Sources */,
+				09EF5AB2A30F1514A0E2BEE8CEBB4C4C /* Device.swift in Sources */,
+				F8088B2D52554891B1CA494CA187C62C /* Environment.swift in Sources */,
+				BC952134F91F1449D089C452F10ADC0D /* OS.swift in Sources */,
+				34C888272A155F37CE01E2DA9EA253FE /* Screen.swift in Sources */,
+				D69B72641FB9D3E0CFA7E7A10EC66F7E /* Type.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9F8A7B4D1F72047E01471977A8BBF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE88522CF631A1965A48B46CAC8770EB /* GBDeviceInfo-dummy.m in Sources */,
+				CD8F256BB1E8911F4106EEDE363445E1 /* GBDeviceInfo_Common.m in Sources */,
+				1DD37AF41519D225C8DA3423ADB766DD /* GBDeviceInfo_iOS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4CBB2C6A61BB7D8C39F224E0EF013641 /* PBXTargetDependency */ = {
+		1D02CAA268A29180171656E6EB2AA1B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AssistantKit;
+			target = B21DB8D1DC05B59A6C718909108CA619 /* AssistantKit */;
+			targetProxy = 8E5204CA63ACC50C800D4FB7B79B6026 /* PBXContainerItemProxy */;
+		};
+		C7E21BB3047CF5244A4DD5410826C6BD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GBDeviceInfo;
-			target = 028DFD27F186DB6013DC9AD5D06DBF2C /* GBDeviceInfo */;
-			targetProxy = A492BBE46C86057E1C44E0BA26A12CFC /* PBXContainerItemProxy */;
+			target = 07B468BCC95D3DBCB25567CE39934C92 /* GBDeviceInfo */;
+			targetProxy = 0C2FBD003EEA333DDD41B0F326E350D7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2728D7E98260005E80085F6291E196BF /* Release */ = {
+		007F1066051A467FBEB0038594E9D7C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		35CFA5C223BE7112179C4EC85AE53016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A634C7E39AC241EC352306946644C69 /* GBDeviceInfo.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GBDeviceInfo/GBDeviceInfo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GBDeviceInfo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GBDeviceInfo/GBDeviceInfo.modulemap";
+				PRODUCT_MODULE_NAME = GBDeviceInfo;
+				PRODUCT_NAME = GBDeviceInfo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4F6FC8525662D531EAD52452243A8BB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50E01EC41B49F88C83B09017226133B /* Pods-AdvancedIB.release.xcconfig */;
 			buildSettings = {
@@ -336,7 +576,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-AdvancedIB/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AdvancedIB/Pods-AdvancedIB.modulemap";
 				OTHER_LDFLAGS = "";
@@ -346,6 +590,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -353,7 +599,157 @@
 			};
 			name = Release;
 		};
-		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
+		8107EA4D469A495C530773F02DC363A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E033B8F4B13B0FF0D08A0599BE4D278 /* Pods-AdvancedIB.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdvancedIB/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdvancedIB/Pods-AdvancedIB.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84C53D73955B4DAF7567D6A8060C6FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A53DFBBE7BA712855918D0282D7A6A58 /* AssistantKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AssistantKit/AssistantKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AssistantKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AssistantKit/AssistantKit.modulemap";
+				PRODUCT_MODULE_NAME = AssistantKit;
+				PRODUCT_NAME = AssistantKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B276BD003158743C71CD4C1FA4947C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A634C7E39AC241EC352306946644C69 /* GBDeviceInfo.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GBDeviceInfo/GBDeviceInfo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GBDeviceInfo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GBDeviceInfo/GBDeviceInfo.modulemap";
+				PRODUCT_MODULE_NAME = GBDeviceInfo;
+				PRODUCT_NAME = GBDeviceInfo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA17C977CD78512EB885F144B69F4442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A53DFBBE7BA712855918D0282D7A6A58 /* AssistantKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AssistantKit/AssistantKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AssistantKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AssistantKit/AssistantKit.modulemap";
+				PRODUCT_MODULE_NAME = AssistantKit;
+				PRODUCT_NAME = AssistantKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E246FC26AF4A9832D7AA01080188D618 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -407,7 +803,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -416,187 +813,41 @@
 			};
 			name = Debug;
 		};
-		8B1136159AC5676E5FDDD53545D2BDAC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E033B8F4B13B0FF0D08A0599BE4D278 /* Pods-AdvancedIB.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AdvancedIB/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AdvancedIB/Pods-AdvancedIB.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A08CA72D20C287B9C7A124BED213D864 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81378A980BA6E4F4C9B8C0B7E750CE18 /* GBDeviceInfo.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GBDeviceInfo/GBDeviceInfo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GBDeviceInfo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GBDeviceInfo/GBDeviceInfo.modulemap";
-				PRODUCT_MODULE_NAME = GBDeviceInfo;
-				PRODUCT_NAME = GBDeviceInfo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		CA2203F03C8FB3E1EA3ACF3528545DBD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81378A980BA6E4F4C9B8C0B7E750CE18 /* GBDeviceInfo.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GBDeviceInfo/GBDeviceInfo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GBDeviceInfo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GBDeviceInfo/GBDeviceInfo.modulemap";
-				PRODUCT_MODULE_NAME = GBDeviceInfo;
-				PRODUCT_NAME = GBDeviceInfo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		22CF681C3BAF67D0843DB4973F19B89D /* Build configuration list for PBXNativeTarget "Pods-AdvancedIB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8107EA4D469A495C530773F02DC363A6 /* Debug */,
+				4F6FC8525662D531EAD52452243A8BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
-				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+				E246FC26AF4A9832D7AA01080188D618 /* Debug */,
+				007F1066051A467FBEB0038594E9D7C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D00F131B0761F69BD552BF43EA7DF0C /* Build configuration list for PBXNativeTarget "GBDeviceInfo" */ = {
+		9828B8C949E8D7694D75870D2114ACE4 /* Build configuration list for PBXNativeTarget "AssistantKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA2203F03C8FB3E1EA3ACF3528545DBD /* Debug */,
-				A08CA72D20C287B9C7A124BED213D864 /* Release */,
+				CA17C977CD78512EB885F144B69F4442 /* Debug */,
+				84C53D73955B4DAF7567D6A8060C6FA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC15CFCBCFB0883A8C5422189A134BA9 /* Build configuration list for PBXNativeTarget "Pods-AdvancedIB" */ = {
+		F3ABBD1F1F05350F67AD4B5827C9E12A /* Build configuration list for PBXNativeTarget "GBDeviceInfo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B1136159AC5676E5FDDD53545D2BDAC /* Debug */,
-				2728D7E98260005E80085F6291E196BF /* Release */,
+				35CFA5C223BE7112179C4EC85AE53016 /* Debug */,
+				B276BD003158743C71CD4C1FA4947C9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

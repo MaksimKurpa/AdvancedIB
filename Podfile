@@ -6,5 +6,6 @@ target 'AdvancedIB' do
   use_frameworks!
 
   pod 'GBDeviceInfo'
+  pod 'AssistantKit'
 
 end

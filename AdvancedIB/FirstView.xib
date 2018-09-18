@@ -1,63 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstView" customModule="AdvancedIB" customModuleProvider="target">
             <connections>
+                <outlet property="_avatarButton" destination="dd4-4I-9w5" id="ZtZ-CY-RyK"/>
                 <outlet property="_avatarImageView" destination="d0X-gl-gaF" id="Y35-Yu-i1S"/>
-                <outlet property="_detailLabel" destination="xv7-Ci-zou" id="bhz-GW-lP6"/>
+                <outlet property="_detailButton" destination="DO7-8g-hNy" id="iLF-hZ-kMH"/>
                 <outlet property="_nameLabel" destination="jLC-cf-nkn" id="fG3-hy-YLm"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="250" height="96"/>
+            <rect key="frame" x="0.0" y="0.0" width="402" height="220"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maksim Kurpa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLC-cf-nkn">
-                    <rect key="frame" x="108" y="31.5" width="127" height="21"/>
+                    <rect key="frame" x="207" y="93.5" width="180" height="21"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bob" translatesAutoresizingMaskIntoConstraints="NO" id="d0X-gl-gaF">
-                    <rect key="frame" x="16" y="9.5" width="77" height="77"/>
+                    <rect key="frame" x="16" y="22" width="176" height="176"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="d0X-gl-gaF" secondAttribute="height" id="Hp8-rP-82S"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="go to profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xv7-Ci-zou">
-                    <rect key="frame" x="108" y="55" width="127" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.73725490199999999" green="0.73333333329999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dd4-4I-9w5">
+                    <rect key="frame" x="16" y="22" width="176" height="176"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO7-8g-hNy">
+                    <rect key="frame" x="207" y="122" width="172" height="92"/>
+                    <state key="normal" title="Edit Profile">
+                        <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.82352941180000006" green="0.1019607843" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="d0X-gl-gaF" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="80:100" id="0hW-GN-s4j"/>
+                <constraint firstItem="dd4-4I-9w5" firstAttribute="trailing" secondItem="d0X-gl-gaF" secondAttribute="trailing" id="71s-aR-4xf"/>
                 <constraint firstItem="jLC-cf-nkn" firstAttribute="leading" secondItem="d0X-gl-gaF" secondAttribute="trailing" constant="15" id="AJO-qm-DOJ"/>
-                <constraint firstItem="xv7-Ci-zou" firstAttribute="trailing" secondItem="jLC-cf-nkn" secondAttribute="trailing" id="Atx-xr-JYJ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jLC-cf-nkn" secondAttribute="trailing" constant="15" id="BIN-xf-vXs"/>
+                <constraint firstItem="DO7-8g-hNy" firstAttribute="leading" secondItem="d0X-gl-gaF" secondAttribute="trailing" constant="15" id="D57-3y-IKS"/>
+                <constraint firstItem="DO7-8g-hNy" firstAttribute="top" secondItem="jLC-cf-nkn" secondAttribute="bottom" constant="7.5" id="Qti-vz-Elq"/>
                 <constraint firstItem="d0X-gl-gaF" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="SsW-Kh-9RR"/>
                 <constraint firstItem="jLC-cf-nkn" firstAttribute="baseline" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="U1s-XF-jkL"/>
-                <constraint firstItem="xv7-Ci-zou" firstAttribute="leading" secondItem="jLC-cf-nkn" secondAttribute="leading" id="i2p-OA-KxR"/>
-                <constraint firstItem="xv7-Ci-zou" firstAttribute="width" secondItem="jLC-cf-nkn" secondAttribute="width" id="l8U-eV-xxT"/>
-                <constraint firstItem="d0X-gl-gaF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="lJ4-01-ZCZ"/>
-                <constraint firstItem="xv7-Ci-zou" firstAttribute="top" secondItem="jLC-cf-nkn" secondAttribute="bottom" constant="2.5" id="rYp-68-vXa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DO7-8g-hNy" secondAttribute="trailing" constant="23" id="ZgE-b8-Twf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="DO7-8g-hNy" secondAttribute="bottom" constant="6" id="fbI-si-V3c"/>
+                <constraint firstItem="dd4-4I-9w5" firstAttribute="bottom" secondItem="d0X-gl-gaF" secondAttribute="bottom" id="hLi-UB-vwo"/>
+                <constraint firstItem="dd4-4I-9w5" firstAttribute="leading" secondItem="d0X-gl-gaF" secondAttribute="leading" id="kzH-TD-mGe"/>
+                <constraint firstItem="d0X-gl-gaF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="lJ4-01-ZCZ">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="inch40">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="inch47">
+                            <real key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="inch55">
+                            <real key="value" value="-30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="dd4-4I-9w5" firstAttribute="top" secondItem="d0X-gl-gaF" secondAttribute="top" id="xgA-bs-tO5"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="-36" y="-343"/>
+            <point key="canvasLocation" x="-62" y="-354"/>
         </view>
     </objects>
     <resources>
